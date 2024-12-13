@@ -1,0 +1,93 @@
+{
+    "Northwind": {
+      "type": "mysql",  
+      "tables": [
+        {
+          "name": "Customers",
+          "columns": ["CustomerID", "CompanyName", "ContactName", "Country"],
+          "sampleData": [
+            { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+            { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" },
+            { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+            { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" }
+          ]
+        },
+        {
+            "name": "Customers",
+            "columns": ["CustomerID", "CompanyName", "ContactName", "Country"],
+            "sampleData": [
+              { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+              { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" },
+              { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+              { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" }
+            ]
+          },
+        {
+          "name": "Orders",
+          "columns": ["OrderID", "CustomerID", "EmployeeID", "OrderDate"],
+          "sampleData": [
+            { "OrderID": 10248, "CustomerID": "VINET", "EmployeeID": 5, "OrderDate": "1996-07-04" },
+            { "OrderID": 10249, "CustomerID": "TOMSP", "EmployeeID": 6, "OrderDate": "1996-07-05" },
+            { "OrderID": 10248, "CustomerID": "VINET", "EmployeeID": 5, "OrderDate": "1996-07-04" },
+            { "OrderID": 10249, "CustomerID": "TOMSP", "EmployeeID": 6, "OrderDate": "1996-07-05" }
+          ]
+        }
+      ]
+    },
+    "AdventureWorks": {
+      "type": "mysql",  
+      "tables": [
+        {
+          "name": "Customers",
+          "columns": ["CustomerID", "CompanyName", "ContactName", "Country"],
+          "sampleData": [
+            { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+            { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" },
+            { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+            { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" }
+          ]
+        },
+        {
+            "name": "Customers",
+            "columns": ["CustomerID", "CompanyName", "ContactName", "Country"],
+            "sampleData": [
+              { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+              { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" },
+              { "CustomerID": "ALFKI", "CompanyName": "Alfreds Futterkiste", "ContactName": "Maria Anders", "Country": "Germany" },
+              { "CustomerID": "ANATR", "CompanyName": "Ana Trujillo Emparedados", "ContactName": "Ana Trujillo", "Country": "Mexico" }
+            ]
+          },
+        {
+          "name": "Orders",
+          "columns": ["OrderID", "CustomerID", "EmployeeID", "OrderDate"],
+          "sampleData": [
+            { "OrderID": 10248, "CustomerID": "VINET", "EmployeeID": 5, "OrderDate": "1996-07-04" },
+            { "OrderID": 10249, "CustomerID": "TOMSP", "EmployeeID": 6, "OrderDate": "1996-07-05" },
+            { "OrderID": 10248, "CustomerID": "VINET", "EmployeeID": 5, "OrderDate": "1996-07-04" },
+            { "OrderID": 10249, "CustomerID": "TOMSP", "EmployeeID": 6, "OrderDate": "1996-07-05" }
+          ]
+        }
+      ]
+    },
+    "EcommerceDB": {
+        "type": "mongodb",
+        "collections": [
+          {
+            "name": "Products",
+            "fields": ["ProductID", "ProductName", "Price", "Category"],
+            "sampleData": [
+              { "ProductID": "101", "ProductName": "Laptop", "Price": 999.99, "Category": "Electronics" },
+              { "ProductID": "102", "ProductName": "Phone", "Price": 799.99, "Category": "Electronics" }
+            ]
+          },
+          {
+            "name": "Orders",
+            "fields": ["OrderID", "CustomerID", "TotalAmount", "OrderDate"],
+            "sampleData": [
+              { "OrderID": "5001", "CustomerID": "C001", "TotalAmount": 1200, "OrderDate": "2023-01-15" },
+              { "OrderID": "5002", "CustomerID": "C002", "TotalAmount": 800, "OrderDate": "2023-01-16" }
+            ]
+          }
+        ]
+      }
+  }  

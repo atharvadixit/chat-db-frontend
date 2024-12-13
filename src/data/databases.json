@@ -1,0 +1,47 @@
+{
+    "mysql": [
+      {
+        "name": "Northwind",
+        "emoji": "🛍️",
+        "description": "A sample database with data about products, orders, customers."
+      },
+      {
+        "name": "World",
+        "emoji": "🌍️",
+        "description": "A sample database with data about countries, cities, and languages."
+      },
+      {
+        "name": "Chinook",
+        "emoji": "🎶",
+        "description": "A sample database for managing music store data."
+      },
+      {
+        "name": "Sakila",
+        "emoji": "🎥",
+        "description": "A sample database for a DVD rental business that provides data for store management."
+      }
+    ],
+    "mongodb": [
+      {
+        "name": "Airbnb",
+        "emoji": "🏡",
+        "description": "A sample NoSQL database showcasing rental property data for MongoDB demos."
+      },
+      {
+        "name": "Weather",
+        "emoji": "🌤️",
+        "description": "A NoSQL database for storing and analyzing weather data and forecasts."
+      },
+      {
+        "name": "Restaurants",
+        "emoji": "🍽️",
+        "description": "A NoSQL database for managing restaurant data, including menus, ratings, and reviews."
+      },
+      {
+        "name": "Supplies",
+        "emoji": "📦",
+        "description": "A NoSQL database for tracking inventory and supplies for various operations."
+      }    
+    ]
+  }
+  

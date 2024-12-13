@@ -1,0 +1,106 @@
+.chat-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Ensure the container takes full screen height */
+}
+
+.chat-box {
+    height: 80vh;  /* Make the chat-box occupy 80% of the screen height */
+    overflow-y: auto;
+    padding: 10px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .chat-box {
+        height: 65vh;  /* On smaller screens, still occupy 80% of the screen height */
+        overflow-y: auto;
+        padding: 10px;
+        background-color: transparent;
+    }
+}
+
+.italic-bold
+{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.custom-modal-width .modal-dialog {
+    max-width: 80%; /* Adjust the width as needed */
+}
+
+.custom-modal-width .modal-content {
+    width: 100%; /* Ensure content fits within the dialog */
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    width: fit-content;
+    display: block;  /* Ensure that each message takes full width and does not float */
+    clear: both;  /* Clears any floats above */
+}
+
+/* User message aligned to the right */
+.message.user {
+    background-color: #d1e7dd;
+    text-align: right;
+    align-self: flex-end; /* Align to the right */
+    margin-left: auto; /* Push to the right */
+}
+
+/* Bot message aligned to the left */
+.message.bot {
+    background-color: #e2e3e5;
+    text-align: left;
+    align-self: flex-start; /* Align to the left */
+    margin-right: auto; /* Push to the left */
+}
+
+
+
+/* Wrapper for input and button */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Chat input style with increased border-radius */
+.chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    padding-right: 50px;  /* Add space for the button */
+    border: 1px solid #ddd;
+    border-radius: 30px;  /* Make the input more rounded */
+    font-size: 16px;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Send button inside the input field */
+.send-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 14px;
+    outline: none;
+}
+
+
+/* Optional: Add focus styles for the input */
+.chat-input:focus {
+    /* border-color: #007bff; */
+    /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); */
+}

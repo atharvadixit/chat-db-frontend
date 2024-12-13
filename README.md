@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Chat-DB-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a React-based frontend application designed to interact with a database (MySQL or MongoDB). Users can learn database concepts, run predefined queries, and execute custom queries on their databases.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Installation and Setup
 
-### `npm start`
+### Prerequisites
+- Node.js and npm installed on your machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Steps to Run
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd chat-db-frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open the application in your browser at:
+   ```
+   http://localhost:3000
+   ```
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## File Structure
 
-### `npm test`
+### Root Directory
+- **package.json**: Lists the dependencies and scripts for the project.
+- **package-lock.json**: Tracks the dependency tree for consistent installations.
+- **.gitignore**: Specifies files and directories to be ignored by Git.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Public Directory
+- **index.html**: The main HTML template for the React application.
+- **favicon.ico**: The favicon for the application.
 
-### `npm run build`
+### Src Directory
+- **App.js**: The main entry point of the React application.
+- **index.js**: Renders the application and attaches it to the DOM.
+- **App.css**: Global CSS for the application.
+- **index.css**: Additional global styling.
+- **logo.svg**: Placeholder for the logo image.
+- **reportWebVitals.js**: Used for measuring performance metrics.
+- **setupTests.js**: Test setup for the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Src/Components Directory
+This directory contains the React components used in the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **ChatComponent.js**: Handles the chat-like interface for interacting with the database. Users can view query suggestions, run predefined queries, and see results.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **DatabaseDetails.js**: Displays details of the selected database (e.g., tables for MySQL or collections for MongoDB) with a preview of their contents.
 
-### `npm run eject`
+3. **DatabaseList.js**: Lists all available databases and allows users to select one to learn.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **HomePage.js**: The landing page of the application that provides an overview and navigation to the available features.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **LearningPage.js**: The main learning interface where users can interact with the database. Includes a chat component and a custom query feature.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. **Navbar.js**: Provides navigation options for the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7. **UploadDataSet.js**: Allows users to upload datasets to the backend.
 
-## Learn More
+### Css Directory
+Contains stylesheets for the components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **ChatComponent.css**: Custom styles for the chat interface.
+2. **index.css**: Additional styles shared across components.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Usage
+1. **Learning Database Concepts**:
+   - Navigate to the Learning Page.
+   - Interact with the chat interface to learn about predefined queries.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Running Custom Queries**:
+   - Click the "Run Custom Query" link.
+   - Enter your custom query in the modal.
+   - View results in a table (MySQL) or as JSON (MongoDB).
 
-### Analyzing the Bundle Size
+3. **Uploading Datasets**:
+   - Use the upload feature to add new data to the backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Enhancements
+- Add authentication for secure access.
+- Improve UI/UX with enhanced feedback mechanisms.
+- Support additional database types.

@@ -1,0 +1,7 @@
+.custom-modal-width .modal-dialog {
+    max-width: 80%; /* Adjust the width as needed */
+}
+
+.custom-modal-width .modal-content {
+    width: 100%; /* Ensure content fits within the dialog */
+}
